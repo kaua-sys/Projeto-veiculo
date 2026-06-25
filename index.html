@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cáculo seguro e IPVA automotivo</title>
+
+    <link rel="stylesheet" href="css/style_veiculo.css">
+    <script src="js/script_veiculo.js" defer type="module"></script>
+
+</head>
+<body>
+    <div id = "geral">
+       <h3>Cadastro veiculo</h3>
+
+            <div id = "div-regras">
+            <p>O seguro será fixado em 10% do
+                valor do veículo para todos os casos, enquanto o IPVA será
+                calculado de acordo com o tipo de combustível:</p>
+            <p>veículos a gasolina pagam 20%, etanol 15%, bicombustíveis 10%, híbridos
+                8% e elétricos 2%.</p>
+                <p> Caso o veículo tenha mais de 20 anos de
+                fabricação, ele será considerado isento de IPVA, sendo
+                exibido esse status na listagem.</p>
+
+        <div id="div-cadastro">
+            <form id="form-cadastro">
+
+            <label for="modelo">Modelo</label>
+            <input type="modelo" name="modelo" id="modelo">
+
+            <label for="marca">Marca</label>
+            <input type="placa" name="placa" id="placa">
+
+            <label for="ano">Ano de fabricação</label>
+            <input type="ano" name="ano" id="ano">
+
+            <label for="valor">Valor de mercado do veículo</label>
+            <input type="valor" name="valor" id="valor">
+
+            <label for="tipo">Tipo de combustivel</label>
+            <input type="tipo" name="tipo" id="tipo">
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+            </form>
+
+        </div>
+
+        <div id="div-lista-veiculos"> 
+
+        </div>
+    </div>
+    
+</body>
+</html>
